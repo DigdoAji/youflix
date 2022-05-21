@@ -27,7 +27,7 @@ module.exports = {
        new HtmlWebpackPlugin({
            template: "./src/index.html",
            filename: "index.html",
-           favicon: "./src/assets/image/favicon.ico"
+           favicon: "./src/assets/image/playlogo.png"
        }),
        new CopyWebpackPlugin({
         patterns: [

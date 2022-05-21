@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: inline;
+}
+
+main {
+  margin: 32px auto 40px auto;
+}
+
+.search-title > #change-text {
+  font-size: 35px;
+  margin: 0 56px;
+  cursor: default;
+}
+
+.search-container {
+  max-width: 750px;
+  padding: 16px 30px;
+  margin: 5px 20px 5px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.search-container > input {
+  width: 75%;
+  padding: 16px;
+  border: 2px solid black;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.search-container > input:focus {
+  outline: 0;
+}
+
+.search-container > input:focus::placeholder {
+  color: #BE3144;
+  font-weight: 600;
+}
+
+.search-container > input::placeholder {
+  color: #b2b1b9;
+  font-weight: 400;
+}
+
+.search-container > button {
+  width: 24%;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 16px;
+  background-color: #a82d3e;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-container > button:hover {
+  background-color: #9e2333;
+}
+
+.search-container > #buttonSearch > img {
+  width: 34px;
+  margin-bottom: -6.5px;
+  padding-right: 6px;
+}
+
+.media-container {
+  margin: 5px 50px;
+  padding-left: 20px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.media-container > .btn-movie, .btn-tv {
+  width: 120px;
+  cursor: pointer;
+  margin: 4px 6px;
+  padding: 14px 8px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.media-container > .btn-movie {
+  background-color: #00BD56;
+}
+
+.media-container > .btn-tv {
+    background-color: #207DFF;
+}
+
+.media-container > .btn-movie:hover {
+  background-color: #00b552;
+}
+
+.media-container > .btn-tv:hover {
+    background-color: #1b67d1;
+}
+
+.content-item {
+  margin: 26px 40px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-list {
+  margin: 0 auto 30px;
+  justify-content: space-between;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 0 1 calc(30% - 0.8rem);
+  align-self: normal;
+}
+
+.content-list > h2{
+ background-color: #48466d;
+ color: white;
+ text-align: center;
+ padding: 10px;
+ width: 100%;
+ border-bottom: 2px solid white;
+ font-size: 25px;
+ font-weight: 700;
+ text-transform: uppercase;
+}
+
+.content-list > .poster-content {
+width: 100%;
+max-height: 450px;
+object-fit: cover;
+object-position: center;
+}
+
+.content-info {
+padding: 16px 24px 24px;
+}
+
+.content-info > h2 {
+font-size: 20px;
+font-weight: 700;
+margin-top: 5px;
+padding-right: 20px;
+float: left;
+width: 83%;
+}
+
+.content-info > h4 {
+font-size: 16px;
+font-weight: 600;
+margin-top: 5px;
+padding: 5px;
+background-color: green;
+color: white;
+border-radius: 6px;
+text-align: center;
+cursor: default;
+float: right;
+width: 17%;
+}
+
+.content-info > h3 {
+font-size: 18px;
+font-weight: 700;
+text-align: center;
+clear: both;
+padding: 5px 0 5px;
+}
+
+.content-info > p {
+margin-top: 5px;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 10;
+}
+
+@media screen and (max-width: 1170px) {
+.content-list {
+ flex: 0 1 calc(50% - 0.8rem);
+ justify-content: center;
+}
+
+.content-info > h2 {
+ font-size: 24px;
+}
+
+.content-info > h3 {
+ font-size: 20px;
+}
+}
+
+@media screen and (max-width: 800px) {
+.content-list {
+ flex: 0 1 calc(100%);
+ justify-content: center;
+}
+}
+
+@media screen and (max-width: 670px) {
+  .search-title h2 {
+      font-size: 24px;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  .search-container > input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .search-container > button {
+    width: 100%;
+  }
+  .media-container {
+    padding-left: 0;
+  }
+
+  .media-container > .btn-movie,
+  .btn-tv {
+    width: 100%;
+  }
+}
